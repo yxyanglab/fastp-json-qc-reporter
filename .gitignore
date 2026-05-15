@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.venv/
+venv/
+raw_data/
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz

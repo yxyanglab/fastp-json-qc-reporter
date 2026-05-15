@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "before_filtering": {
+      "total_reads": 1000000
+    },
+    "after_filtering": {
+      "total_reads": 940000,
+      "q30_rate": 0.915,
+      "gc_content": 0.512
+    }
+  },
+  "filtering_result": {
+    "passed_filter_reads": 940000
+  },
+  "read1_before_filtering": {
+    "content_curves": {
+      "A": [0.25, 0.26, 0.25, 0.24],
+      "T": [0.24, 0.25, 0.25, 0.25],
+      "C": [0.25, 0.24, 0.25, 0.26],
+      "G": [0.26, 0.25, 0.25, 0.25]
+    }
+  },
+  "read2_before_filtering": {
+    "content_curves": {
+      "A": [0.25, 0.25, 0.26, 0.25],
+      "T": [0.25, 0.24, 0.25, 0.26],
+      "C": [0.24, 0.25, 0.25, 0.25],
+      "G": [0.26, 0.26, 0.24, 0.24]
+    }
+  }
+}

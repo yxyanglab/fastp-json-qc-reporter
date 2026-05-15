@@ -1,0 +1,21 @@
+========================================================================
+QC verdict: 1/2 samples need attention.
+========================================================================
+
+Sample            Status      Filter       Q30        GC     |A-T|     |C-G|
+----------------------------------------------------------------------------
+good_sample       PASS         6.00%    91.50%    51.20%     0.25%     0.25%
+problem_sample    FAIL        24.00%    73.50%    70.20%    16.12%     4.12%
+
+Pass thresholds
+- Filtering rate <= 15.00%
+- Q30 rate >= 80.00%
+- GC content between 35.00% and 65.00%
+- |A-T| and |C-G| <= 10.00%
+
+Failed samples
+- problem_sample: filter_rate, q30, gc, at_diff
+  Suggestion: 检查原始测序质量和接头污染；必要时调整 fastp 修剪参数或重新测序。
+  Suggestion: 检查测序平台、试剂批次和低质量循环；必要时加强前后端修剪。
+  Suggestion: 结合物种背景判断是否合理；若明显异常，排查污染、建库偏好或样本混淆。
+  Suggestion: 检查链特异性、随机引物偏好和 read composition；轻微偏差需在报告中说明。
