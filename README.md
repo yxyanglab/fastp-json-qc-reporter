@@ -116,8 +116,8 @@ problem_sample 存在以下问题：
 | 过滤率 | `<= 15%` |
 | Q30 rate | `>= 80%` |
 | GC content | `35%-65%` |
-| `|A-T|` | `<= 10%` |
-| `|C-G|` | `<= 10%` |
+| `\|A-T\|` | `<= 10%` |
+| `\|C-G\|` | `<= 10%` |
 
 详细说明见 [docs/qc_thresholds.md](docs/qc_thresholds.md)。
 
@@ -132,16 +132,6 @@ python3 scripts/analyze_fastp.py examples/input \
   --base-diff-max 0.12
 ```
 
-## 可放入简历的项目描述
-
-> 构建 fastp JSON 多样本质控汇总工具，自动提取过滤率、Q30、GC content 和碱基组成等指标，并依据预设阈值输出 PASS/FAIL 判断、异常原因、排查建议和 `qc_summary.csv`，用于减少转录组/宏组学项目中逐个查看 fastp HTML 报告的重复工作。
-
-## 微生物组分析流程
-
-从 FASTQ 到质控、物种注释、功能注释、差异分析和可视化的说明见 [docs/microbiome_workflow.md](docs/microbiome_workflow.md)。
-
-更多“脚本输出 + Claude Code 决策回答”的展示见 [docs/decision_examples.md](docs/decision_examples.md)。
-
 ## 作为 Claude Code skill 使用
 
 `claude-skill/SKILL.md` 保留了 skill 的说明文本。可以把本仓库的脚本路径配置到自己的 Claude skill 中，让 Claude Code 在检查 fastp JSON 时自动调用：
@@ -149,3 +139,5 @@ python3 scripts/analyze_fastp.py examples/input \
 ```bash
 python3 scripts/analyze_fastp.py /path/to/fastp_json_dir
 ```
+
+更多“脚本输出 + Claude Code 决策回答”的展示见 [docs/decision_examples.md](docs/decision_examples.md)。
