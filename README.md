@@ -82,8 +82,8 @@ python3 scripts/analyze_fastp.py sample1.fastp.json sample2.fastp.json
 | `q30_rate` | 过滤后 Q30 rate |
 | `gc_content` | 过滤后 GC 含量 |
 | `A/T/C/G` | 平均碱基比例 |
-| `at_diff` | `|A-T|` |
-| `cg_diff` | `|C-G|` |
+| `at_diff` | `\|A-T\|` |
+| `cg_diff` | `\|C-G\|` |
 | `issues` | 异常指标 |
 
 文本报告示例：
