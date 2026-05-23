@@ -139,15 +139,7 @@ python3 scripts/analyze_fastp.py examples/input \
   --base-diff-fail 0.12
 ```
 
-## 可放入简历的项目描述
 
-> 构建面向细菌转录组的 NGS 多样本质控决策支持工具，基于 fastp JSON 自动提取过滤率、Q30、GC content 和碱基组成等指标，设计 `PASS/WARN/FAIL` 分级规则和异常模式提示，输出 `qc_summary.csv` 与 Markdown 质控报告，用于减少多样本 fastp/MultiQC 结果的人工判读成本。
-
-## 微生物组分析流程
-
-从 FASTQ 到质控、物种注释、功能注释、差异分析和可视化的说明见 [docs/microbiome_workflow.md](docs/microbiome_workflow.md)。
-
-更多”脚本输出 + Claude Code 决策回答”的展示见 [docs/decision_examples.md](docs/decision_examples.md)。
 ## 作为 Claude Code skill 使用
 
 `claude-skill/SKILL.md` 保留了 skill 的说明文本。可以把本仓库的脚本路径配置到自己的 Claude skill 中，让 Claude Code 在检查 fastp JSON 时自动调用：
